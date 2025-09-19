@@ -1,0 +1,174 @@
+/* Tipografía moderna y profesional */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #d0e6f7, #c5d8ed); /* azul más masculino */
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Contenedor principal */
+.cv-container {
+  max-width: 900px;
+  width: 95%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  border-left: 12px solid #1a3f6b; /* barra lateral azul oscuro */
+}
+
+/* Encabezados */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  color: #1a3f6b; /* azul oscuro */
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #145a86;
+  border-bottom: 2px solid #145a86;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #1f3b57;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Contacto */
+.contacto {
+  margin-bottom: 20px;
+}
+
+.contacto a {
+  color: #145a86;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.contacto a:hover {
+  color: #0d3b5a;
+  text-decoration: underline;
+}
+
+/* Secciones */
+.seccion {
+  margin-bottom: 35px;
+}
+
+/* Listas con íconos masculinos */
+ul {
+  list-style: none;
+  padding-left: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+ul li {
+  position: relative;
+  margin: 10px 0;
+  padding-left: 25px;
+  font-weight: 500;
+}
+
+ul li::before {
+  content: "►"; /* icono más sobrio */
+  position: absolute;
+  left: 0;
+  color: #1a3f6b;
+  font-weight: bold;
+}
+
+/* Experiencia */
+.experiencia article {
+  margin-bottom: 25px;
+  background: #f4f6f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.experiencia h3 {
+  margin-bottom: 8px;
+  color: #1a3f6b;
+}
+
+/* Skills */
+.skills ul {
+  columns: 2;
+  column-gap: 40px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Iconos en footer */
+footer a.footer-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s, color 0.3s;
+  color: inherit; /* hereda color inicial */
+}
+
+footer a.footer-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor; /* toma color del enlace */
+}
+
+/* Colores iniciales */
+footer a.footer-icon.github-icon {
+  color: #333;
+}
+
+footer a.footer-icon.linkedin-icon {
+  color: #0A66C2;
+}
+
+/* Efecto hover */
+footer a.footer-icon:hover {
+  transform: scale(1.2);
+}
+
+footer a.footer-icon.github-icon:hover {
+  color: #000;
+}
+
+footer a.footer-icon.linkedin-icon:hover {
+  color: #004182;
+}
